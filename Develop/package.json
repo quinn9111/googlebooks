@@ -8,8 +8,12 @@
     "seed": "cd server && npm run seed",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm run build"
   },
+  "engines": {
+    "node": "16.x"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
